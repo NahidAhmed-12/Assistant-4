@@ -1,169 +1,115 @@
 
-    
-            /* Custom box-shadow */
-        .custom-shadow {
-          box-shadow: rgba(0, 0, 0, 0.15) 5.95px 5.95px 2.6px;
+.custom-shadow {
+ box-shadow: rgba(0, 0, 0, 0.15) 5.95px 5.95px 2.6px;
         }
         
-        
-        
-        
-        
-        /* Footer Section */
 footer {
-    background-color: #FFFFFF;
+ background-color: #FFFFFF;
 }
-
-/* Flex container for sections */
 footer section {
     display: flex;
-    flex-direction: column; /* Mobile devices: vertical stack */
-    gap: 20px; /* Space between sections */
+    flex-direction: column;
+    gap: 20px; 
     padding: 10px;
-    text-align: center; /* Centering the text on mobile */
+    text-align: center; 
 }
-
 footer section div {
     padding: 10px;
 }
-
-/* Logo and Address Section */
 footer section .logo-address {
     text-align: center;
 }
-
 footer section .logo-address ul {
     list-style-type: none;
     padding: 0;
     margin-top: 10px;
 }
-
 footer section .logo-address ul li {
     font-size: 14px;
 }
-
-/* Header sections (Home, About Us, etc.) */
 footer section .section-header {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
 }
-
-/* Links in footer sections */
 footer section ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-
 footer section ul li {
     font-size: 14px;
     margin-bottom: 8px;
 }
 
-/* Media Query for Large Screens (PC or tablets in landscape) */
 @media (min-width: 768px) {
     footer section {
-        flex-direction: row; /* PC view: horizontal layout */
-        justify-content: space-between; /* Space between the sections */
-        text-align: left; /* Align text left */
+        flex-direction: row; 
+        justify-content: space-between; 
+        text-align: left; 
     }
 
     footer section div {
-        text-align: left; /* Align text left for each section on large screens */
+        text-align: left; 
     }
 
     footer section .logo-address {
-        text-align: left; /* Align address and logo left on larger screens */
+        text-align: left;
     }
 
     footer section .section-header {
-        font-size: 20px; /* Increase header font size for larger screens */
+        font-size: 20px; 
     }
 
     footer section ul li {
-        font-size: 16px; /* Increase font size for links */
+        font-size: 16px; 
     }
 }
-
-/* Copyright Section */
 footer .copyright {
     margin-top: 20px;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
 }
-
-        
-        
-
-  
-  /* মোবাইল স্ক্রীনের জন্য (ডিফল্টভাবে সেন্টার থাকবে) */
 .content {
-  text-align: center; /* মোবাইল স্ক্রীনে সেন্টার হবে */
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-
 .logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
 .nav-ul {
-  text-align: center; /* মোবাইল স্ক্রীনে সেন্টার তালিকা */
+  text-align: center;
 }
 
-/* বড় স্ক্রীনের জন্য (পিসি স্ক্রীন) */
 @media (min-width: 1024px) {
   .content {
-    text-align: left; /* বড় স্ক্রীনে বাম দিকে চলে যাবে */
-    margin-left: 0;    /* মার্জিন লেফট 0 করে দিবে */
-    margin-right: 0;   /* মার্জিন রাইট 0 করে দিবে */
+    text-align: left; 
+    margin-left: 0;  
+    margin-right: 0;   
   }
-
   .logo {
-    margin-left: 0; /* বড় স্ক্রীনে বাম দিকে চলে যাবে */
-    margin-right: 0; /* মার্জিন রাইট 0 */
+    margin-left: 0; 
+    margin-right: 0; 
   }
-
   .nav-ul {
-    text-align: center; /* বড় স্ক্রীনে বাম দিকে তালিকা */
+    text-align: center; 
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Slide In Animation */
 @keyframes slideInRight {
     0% {
-        transform: translateX(100%); /* Start from right outside */
-        opacity: 0; /* Initially invisible */
+        transform: translateX(100%); 
+        opacity: 0;
     }
     100% {
-        transform: translateX(0); /* End position at normal place */
-        opacity: 1; /* Fully visible */
+        transform: translateX(0);
+        opacity: 1; 
     }
 }
-
-/* Apply animation to the button */
 .animate-slideInRight {
     animation: slideInRight 0.5s ease-out forwards;
 }
